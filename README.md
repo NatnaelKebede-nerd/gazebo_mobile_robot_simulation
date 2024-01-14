@@ -65,3 +65,6 @@ At this stage you are insde a container to run all the simulation where all ness
 12. To move between the enviroments, use -- git branch --command and see between the list and then hit git checkout <branch_name> then use the same step to run the simlation.
 
 This project presents a mobile robot simulation environment utilizing Gazebo and Docker for easy setup and reproducibility. The simulation, designed as a foundation for developing and testing mobile robot algorithms, offers diverse robot models and simulated worlds. Prerequisites include installing Docker and Docker Compose, with additional considerations for XLaunch on Windows. After creating a folder, users can build the Docker image, set up a container, and run the simulation. The provided branches represent different worlds, and by switching between them, users can explore and test the robot's behavior in various environments.
+
+project demo- 
+https://www.loom.com/share/59e5a3c079b4439a983bb5f75dfc77e8?sid=41bfa4ae-d8b0-438c-8658-2e17b93b2a51
