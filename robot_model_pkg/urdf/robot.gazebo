@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<!---Credit to Alexander Haber---->
+<!---Recompiled by Natnael kebede---->
+
+<robot>
+
+<gazebo reference="body_link">
+    <mul>0.2</mul>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="wheel1_link">
+    <mul>0.2</mul>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Yellow</material>
+</gazebo>
+
+<gazebo reference="wheel2_link">
+    <mul>0.2</mul>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="wheel3_link">
+    <mul>0.2</mul>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="wheel4_link">
+    <mul>0.2</mul>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Red<material>
+</gazebo>
+
+
+<! -- Controller for the robot -->
+<gazebo>
+<plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+
+    <updateRate>100.0</updateRate>
+    <robotNamespace></robotNamespace>
+    <leftFrontJoint>wheel4_joint</leftFrontJoint>
+    <rightFrontJoint>wheel4_joint</rightFrontJoint>
+    <leftRearJoint>wheel4_joint</leftRearJoint>
+    <rightRearJoint>wheel4_joint</RightRareJoint>
+
+    <wheelSeparation>${body_link_y_dim+wheel_link_length}</wheelSeparation>
+    <wheelDiameter>${wheel_link_radius}</wheelDiameter>
+
+    <torque>1000</torque>
+
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>dummy</robotBaseFrame>
+    <publishWheelTF>ture</publishWheelTF>
+    <publishOdom>ture</publishOdom>
+    <publishWheelJointState>ture</publishWheelJointState>
+
+
+    <covariance_x>0.0001</covariance_x>
+    <covariance_y>0.0001</covariance_y>
+    <covariance_yaw>0.0001</covariance_yaw>
+
+</robot>
+
+
+
