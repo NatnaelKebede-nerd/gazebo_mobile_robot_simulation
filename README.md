@@ -68,3 +68,6 @@ This project presents a mobile robot simulation environment utilizing Gazebo and
 
 project demo- 
 https://www.loom.com/share/59e5a3c079b4439a983bb5f75dfc77e8?sid=41bfa4ae-d8b0-438c-8658-2e17b93b2a51
+
+Reference -
+https://www.youtube.com/watch?v=ad2jd8SCK-o&t=2156s
